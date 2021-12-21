@@ -1,0 +1,12 @@
+//so more basic stuff below:
+
+client.on("messageCreate", message => {
+if (message.content == "hello") return message.reply("hi") //with this you can make code shorter by just using return. 1 good usage for return function is that you just dont add nothing after it so it just stops code.
+})
+
+
+//more stuff
+
+client.destroy() //shuts down the bot by destroying client of it. you can just easily reboot the bot.
+
+//more coming soon ig
