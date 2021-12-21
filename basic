@@ -1,0 +1,19 @@
+const discord = require("discord.js")
+let client = new discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] })
+
+client.on("messageCreate", message => {
+console.log(`${message.author.username} talked` //basic thing to get when user talks
+})
+
+client.on("messageCreate", message => {
+if (message.content == "hello") {  //this is basic way to get command
+message.reply("hello!")
+}
+})
+
+
+
+
+
+
+client.login("token here")
